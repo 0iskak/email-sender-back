@@ -1,5 +1,6 @@
 # email-sender-back
 ## About
+Backend for [!soon](#about). \
 Web api for bulk mailing. \
 See [commands](#commands).
 ### Built With JDK 17 and
