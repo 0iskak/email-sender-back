@@ -25,6 +25,7 @@ public class Connector {
         var api = UUID.randomUUID().toString();
         try {
             statement.execute("CREATE TABLE `"+api+"`(List VARCHAR(50) UNIQUE, Username VARCHAR(50), Password VARCHAR(50))");
+            statement.execute("INSERT INTO `"+api+"` (`List`, `Username`, `Password`) VALUES (NULL, NULL, NULL)");
         } catch (SQLException e) {
             return e.getMessage();
         }
