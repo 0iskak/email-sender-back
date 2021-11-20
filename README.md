@@ -1,7 +1,7 @@
 # email-sender-back
 ## About
 Web api for bulk mailing. \
-See [commands](url).
+See [commands](commands).
 ### Built With JDK 17 and
 * [Gradle](https://gradle.org/)
 * [Spark](https://sparkjava.com/)
