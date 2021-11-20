@@ -28,7 +28,11 @@ or `.\gradlew shadowJar; java -jar build/libs/app-all.jar`
 ## Commands
 Supports only Gmail SMTP. \
 Pass your Gmail address as username and your Gmail password as password. \
-If two factor enabled use [App Passwords](https://support.google.com/accounts/answer/185833), you can get it from [here](https://myaccount.google.com/apppasswords)
+If two factor enabled use [App Passwords](https://support.google.com/accounts/answer/185833), you can get it from [here](https://myaccount.google.com/apppasswords) 
+
+All request methods should be POST. \
+Returns true or requested data if no error. \
+Returns error message if an error occurrs.
 ### API key management
 `https://email-sender-back.herokuapp.com/api/create` - creates a new API key and returns value with a new API key \
 `https://email-sender-back.herokuapp.com/api/renew/YOUR_API` - renews (renames) API key \
