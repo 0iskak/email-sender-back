@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
+}
+
+mainClassName = 'app.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.sparkjava:spark-core:2.9.3'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
+    implementation 'mysql:mysql-connector-java:8.0.27'
+    implementation 'javax.mail:mail:1.4.7'
+}
+
+task stage() {
+    dependsOn shadowJar
+}

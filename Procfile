@@ -1,0 +1,1 @@
+web: java -DPORT=$PORT $JAVA_OPTS -jar build/libs/back-all.jar
