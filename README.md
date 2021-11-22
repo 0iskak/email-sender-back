@@ -18,7 +18,7 @@ See [commands](#commands).
         ```
         port(Integer.parseInt(System.getProperty("PORT")));
         ```
-    2. Change url, username and password in db/Connector.java:
+    2. Change url, username and password (Tested with MySQL 5.7) in db/Connector.java:
         ```
         var url = "jdbc:"+System.getenv("JAWSDB_URL");
         var user = System.getenv("JAWSDB_USERNAME");
